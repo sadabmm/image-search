@@ -21,6 +21,7 @@ app.get('/api/searchimage/:query', (req, res)=>{
     var offsetValue = req.query.offset;
     var pagination = (offsetValue*10)-9;
     //The api url with all the query parameters
+    //Edit the config.js file and add your API key and Search Engine ID
     var URL = baseAPI+
             '?key='+config.API_KEY+
             '&cx='+config.SEARCH_ENGINE_ID+
@@ -55,6 +56,7 @@ app.get('/api/searchimage/:query', (req, res)=>{
         when: formattedDate
     };
     
+    //Edit the config.js file and put your Mongodb URL
     MongoClient.connect(config.MONGO_URL, (err,db)=>{
         console.log('Connected to database.');
         if(err) throw err;
