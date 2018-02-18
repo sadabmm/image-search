@@ -1,0 +1,28 @@
+{
+  "name": "smm-image-search",
+  "version": "0.0.1",
+  "description": "An abstraction layer for searching images using the Google Custom Search API.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadabmm/image-search.git"
+  }
+  "keywords": [
+    "google",
+    "image",
+    "search"
+  ],
+  "author": "SMM",
+  "license": "MIT",
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.2",
+    "xhr-request": "^1.1.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

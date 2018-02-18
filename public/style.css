@@ -1,0 +1,43 @@
+.grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 0.5fr 2.5fr;
+}
+
+.container {
+  grid-area: 2/1/6/6;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header {
+  grid-area: 1/2/2/5;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Rammetto One", cursive;
+}
+
+.info{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    grid-area: 2/1/4/6;
+    font-family: "Open Sans", sans-serif;
+}
+
+.list, .example{
+    text-align: left !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    font-size: 5vw;
+  }
+  .form, .label, .url, .submitBtn, .list, .example, .info {
+    font-size: 2.5vw;
+  }
+}

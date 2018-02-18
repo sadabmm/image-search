@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Image Search API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rammetto+One" rel="stylesheet">
+</head>
+
+<body class="grid">
+    <h1 class="header">Image Search Abstraction Layer</h1>
+    <div class="info">
+        <p>Search for images and see the past 10 search queries and when they were made.</p>
+        <br>
+        <h3 class="example">Example Usage:</h3>
+        <ul class="list">
+            <li>Pass the search query in the API URL along with an offset number to paginate through the responses like this:<br>
+             <span style="font-weight: bold">https://smm-image.glitch.me/api/searchimage/Black Panther?offset=1</span>
+            </li>
+            <br>
+            <li>
+                In your JSON response you will receive 10 results per page with links for the image, thumbnail, context page, and a title snippet of the image.
+            </li>
+            <br>
+            <li>
+                Get a JSON response of the 10 most recently searched queries and the date and time of search like this:
+                <span style="font-weight: bold">https://smm-image.glitch.me/api/latest/imagesearch</span>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
